@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project fitkitversion="1.0" outputprefix="remember">
+    <name>Remember!</name>
+    <author>Vojtech Prusa</author>
+    <authoremail>xprusa05@stud.fit.vutbr.cz</authoremail>
+    <description></description>
+
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <fpga architecture="pc"> 
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+
+        <file>engen.vhd</file>
+        <file>random.vhd</file>
+        <file>top.vhd</file>
+    </fpga>
+</project>
